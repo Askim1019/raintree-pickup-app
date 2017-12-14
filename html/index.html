@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/main.css" rel="stylesheet">
+<!--	<link href="../css/style.css" rel="stylesheet">-->
+
+	<title>Raintree School</title>
+</head>
+
+<body>
+	<div class="container" name="main-body">
+<!--		<form name="main-body"> -->
+			<h1 class="display-4">Drop-off / Pick-up</h1>
+			<div>
+				<p class="lead">Please enter your PIN for pick up.</p>
+		
+				<div>
+					<div class="error-message" id="error-message">
+					</div>
+
+					<div>
+						<p>
+							<input class="pin" id="pin-input" type="text" onkeypress="return isNumberKey(event)" maxlength="4" placeholder="Enter PIN here" />
+						</p>
+					</div>
+				</div>
+
+				<div>
+					<p>
+						<input class="btn btn-primary btn-lg btn-block" type="submit" id="drop-off-button" value="Drop off" onclick="location.href='drop-off-confirm.html'" />
+<!--						<button class="btn btn-primary btn-lg btn-block" type="submit" id="drop-off-button" onclick="location.href='drop-off-confirm.html'">Drop off</button>
+					<a class="btn btn-primary btn-block" href="drop-off-confirm.html" id="drop-off-submit" type="button submit">Drop off</a>-->
+					</p>
+					<p>
+						<input class="btn btn-outline-primary btn-lg btn-block" type="submit" id="pick-up-button" value="Pick up" onclick="location.href='pick-up-confirm.html'" />
+<!--						<button class="btn btn-outline-primary btn-lg btn-block" type="submit" id="pick-up-button" onclick="location.href='pick-up-confirm.html'">Pick up</button>
+<!--					<a class="btn btn-outline-primary btn-lg btn-block" href="pick-up-confirm.html" id="pick-up-submit" type="button submit">Pick up</a>-->
+					</p>
+				</div>
+			</div>
+<!--		</form> -->
+	</div>
+	<br> 
+
+	<footer class="footer">
+		<p>&copy; Raintree School 2017</p>
+	</footer>
+
+	</form>	
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/jquery-validation-1.15.0/dist/jquery.validate.min.js"></script>
+	<script src="../js/form-validation.js"></script>
+<!--	<script src="../js/page-events.js"></script> -->
+</body>
+</html>
